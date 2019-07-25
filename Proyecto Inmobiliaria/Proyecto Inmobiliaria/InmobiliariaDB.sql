@@ -5,14 +5,82 @@ Base de Datos de inmobiliaria
 USE tempdb
 GO 
 
-IF EXISTS (SELECT * FROM sys.databases WHERE name='Inmobiliaria')
+IF EXISTS (SELECT * FROM sys.databases WHERE name='WILEN')
 BEGIN 
-DROP DATABASE Inmobiliaria
+DROP DATABASE WILEN
 END
 GO
 
-CREATE DATABASE Inmobiliaria
+CREATE DATABASE WILEN
 GO
 
-USE Inmobiliaria
+USE WILEN
 GO
+
+CREATE SCHEMA Mueble
+GO
+
+CREATE SCHEMA Usuario
+GO
+
+CREATE TABLE Muebles.Inmueble
+(
+  idProp INT IDENTITY (1,1) CONSTRAINT PK_Muebles_Inmueble_Id PRIMARY KEY CLUSTERED,
+  ciudadProp VARCHAR(55) NULL,
+  direccionProp VARCHAR(65) NULL,
+  descripcion VARCHAR(180) NULL,
+  tipoInmueble VARCHAR(45) NULL,
+  precioProp INT NULL,
+  comisionProp INT NULL,
+  medidaCProp INT NULL,
+  banos INT NULL,
+  dormitorios INT NULL
+)
+GO
+
+CREATE TABLE Usuario.Cliente
+(
+ idCliente INT IDENTITY (1,1) CONSTRAINT PK_Usuario_Cliente_Id PRIMARY KEY CLUSTERED,
+  nombreCliente VARCHAR(45) NOT NULL,
+  telefonoCliente VARCHAR(11) NOT NULL,
+  correoCliente VARCHAR(50) NOT NULL,
+  oficioCliente VARCHAR(20) NULL,
+  direccionCliente VARCHAR(100) NOT NULL
+)
+GO
+
+CREATE TABLE Usuario.Empleado
+(
+  idEmpleado INT IDENTITY (1,1) CONSTRAINT PK_Usuario_Cliente_Id PRIMARY KEY CLUSTERED,
+  nombreEmpleado VARCHAR(45) NOT NULL,
+  telefonoEmpleado VARCHAR(11) NOT NULL,
+  correoEmpleado VARCHAR(65) NULL,
+  direccionEmpleado VARCHAR(145) NULL
+)
+GO
+
+CREATE TABLE Mueble.Operacion
+(
+  idOperacion INT IDENTITY (100,1) CONSTRAINT PK_Usuario_Cliente_Id PRIMARY KEY CLUSTERED ,
+  fechaOperacion DATETIME NULL,
+  observacionOpeacion VARCHAR(100) NULL,
+  Cliente_idCliente VARCHAR(15) NOT NULL,
+  Empleado_idEmpleado INT NOT NULL,
+  Propiedad_idProp INT NOT NULL,
+  FormaPago VARCHAR(45) NOT NULL,
+)
+GO	
+
+CREATE TABLE Mueble.Saldo
+(
+  idNumeroPago INT IDENTITY (1000,1) CONSTRAINT PK_Muebles_Saldo_Id PRIMARY KEY CLUSTERED,
+  Operacion_idOperacion INT NOT NULL,
+  Saldo_pagado INT NULL,
+  saldoPendiente INT NULL,
+  Descuento INT NULL,
+  Mora INT NULL,
+  Interes INT NULL,
+)
+GO
+
+
