@@ -83,4 +83,35 @@ CREATE TABLE Mueble.Saldo
 )
 GO
 
+--Llaves foraneas
+ALTER TABLE Mueble.Operacion
+   ADD CONSTRAINT fk_Operacion_Cliente
+    FOREIGN KEY (Cliente_idCliente)
+    REFERENCES brproyecto.Cliente (idCliente)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
+GO
 
+ALTER TABLE Mueble.Operaion
+ ADD CONSTRAINT fk_Operacion_Empleado1
+    FOREIGN KEY (Empleado_idEmpleado)
+    REFERENCES brproyecto.Empleado (idEmpleado)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
+GO
+
+ALTER TABLE Mueble.Operacion
+    ADD CONSTRAINT fk_Operacion_Inmueble1
+    FOREIGN KEY (Propiedad_idProp)
+    REFERENCES brproyecto.Inmueble (idProp)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
+	GO
+
+	ALTER TABLE Mueble.Saldo
+	ADD CONSTRAINT fk_Saldo_Operacion1
+    FOREIGN KEY (Operacion_idOperacion)
+    REFERENCES brproyecto.Operacion (idOperacion)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
+	GO
