@@ -102,7 +102,7 @@
         <Border Name="PanelMantenimientoPart1" Visibility="Visible"  Grid.Column="0" Grid.Row="2">
             <StackPanel Orientation="Vertical" Margin="15" HorizontalAlignment="Center" VerticalAlignment="Top" >
 
-                <ComboBox Name="cbComprobante" Width="200" FontSize="25" Foreground="Blue" materialDesign:HintAssist.Hint="Comprobante" materialDesign:HintAssist.IsFloating="True" Margin=" 0 0 120 25" >
+                <ComboBox Name="cbComprobante" Width="200" FontSize="25" Foreground="Blue" Style="{StaticResource MaterialDesignFloatingHintComboBox }" materialDesign:HintAssist.Hint="Comprobante" materialDesign:HintAssist.IsFloating="True" Margin=" 0 0 120 25" >
 
                 </ComboBox>
                 <StackPanel Orientation="Horizontal" Width="280" Margin="0 10 45 0">
