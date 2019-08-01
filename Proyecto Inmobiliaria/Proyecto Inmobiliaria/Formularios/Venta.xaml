@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        xmlns:local="clr-namespace:TCSv2.View.Windows_Children"
+        xmlns:local="clr-namespace:Proyecto_Inmobiliaria"
         mc:Ignorable="d"
         Title="Ventas" Height="670" Width="1075" WindowStartupLocation="Manual" Top="130" Left="295" ResizeMode="NoResize" WindowStyle="None" BorderBrush="#FF1B64CF" BorderThickness="2">
     <Grid>
