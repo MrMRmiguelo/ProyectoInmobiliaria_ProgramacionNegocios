@@ -55,7 +55,11 @@
         <!--#region Panel Listado-->
         <Border Name="PanelListado" Grid.RowSpan="5" Grid.ColumnSpan="3" Visibility="Visible" Width="1000" Margin="0 70">
             <Grid Background="White">
-                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="187*"/>
+                    <ColumnDefinition Width="813*"/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="115,3">
                     <StackPanel Orientation="Horizontal" >
 
                         <StackPanel Orientation="Horizontal" Margin="0 20 0 0">

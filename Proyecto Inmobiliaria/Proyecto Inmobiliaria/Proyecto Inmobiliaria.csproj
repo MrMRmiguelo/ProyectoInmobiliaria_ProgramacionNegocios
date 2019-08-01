@@ -61,12 +61,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Formularios\Clientes.xaml.cs">
+      <DependentUpon>Clientes.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Venta.xaml.cs">
       <DependentUpon>Venta.xaml</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Vendedores.xaml.cs">
       <DependentUpon>Vendedores.xaml</DependentUpon>
     </Compile>
+    <Page Include="Formularios\Clientes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
