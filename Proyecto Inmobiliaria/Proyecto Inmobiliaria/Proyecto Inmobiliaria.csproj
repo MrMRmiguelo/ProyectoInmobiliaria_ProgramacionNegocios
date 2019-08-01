@@ -61,6 +61,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Formularios\Clientes.xaml.cs">
+      <DependentUpon>Clientes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Venta.xaml.cs">
+      <DependentUpon>Venta.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Vendedores.xaml.cs">
+      <DependentUpon>Vendedores.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Formularios\Clientes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -74,6 +87,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Formularios\Venta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Formularios\Vendedores.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -109,7 +130,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="40322405_316798888867786_2113668661808988160_n.jpg" />
+    <Resource Include="Fotos\40322405_316798888867786_2113668661808988160_n.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

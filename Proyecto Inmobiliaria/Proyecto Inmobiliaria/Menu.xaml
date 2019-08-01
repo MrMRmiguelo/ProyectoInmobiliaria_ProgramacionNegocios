@@ -97,7 +97,7 @@
 
 
         </Grid>
-        <Image Source="C:\Users\MrMRmiguelo\source\repos\Inmobiliaria\Proyecto Inmobiliaria\Proyecto Inmobiliaria\40322405_316798888867786_2113668661808988160_n.jpg" HorizontalAlignment="Left" Height="115" Margin="265,10,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.5,0.5">
+        <Image Source="C:\Users\MrMRmiguelo\source\repos\Inmobiliaria\Proyecto Inmobiliaria\Proyecto Inmobiliaria\Fotos\40322405_316798888867786_2113668661808988160_n.jpg" HorizontalAlignment="Left" Height="115" Margin="265,10,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
