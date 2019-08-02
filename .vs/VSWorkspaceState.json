@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Proyecto Inmobiliaria"
+    "\\Proyecto Inmobiliaria",
+    "\\Proyecto Inmobiliaria\\packages",
+    "\\Proyecto Inmobiliaria\\Proyecto Inmobiliaria"
   ],
-  "SelectedNode": "\\Proyecto Inmobiliaria\\Proyecto Inmobiliaria.sln",
+  "SelectedNode": "\\Proyecto Inmobiliaria\\Proyecto Inmobiliaria\\Menu.xaml",
   "PreviewInSolutionExplorer": false
 }
