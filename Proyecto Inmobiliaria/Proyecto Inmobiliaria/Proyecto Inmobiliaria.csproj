@@ -62,16 +62,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Formularios\Venta.xaml.cs">
-      <DependentUpon>Venta.xaml</DependentUpon>
+    <Compile Include="Formularios\Clientes.xaml.cs">
+      <DependentUpon>Clientes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Ventas.xaml.cs">
+      <DependentUpon>Ventas.xaml</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Vendedores.xaml.cs">
       <DependentUpon>Vendedores.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="WILENDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>WILENDataSet.xsd</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -89,7 +90,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Formularios\Venta.xaml">
+    <Page Include="Formularios\Ventas.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

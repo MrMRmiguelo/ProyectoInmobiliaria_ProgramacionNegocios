@@ -13,16 +13,17 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Configuration;
 
 namespace Proyecto_Inmobiliaria.Formularios
 {
     /// <summary>
     /// Lógica de interacción para Proveedores.xaml
     /// </summary>
-    public partial class Proveedores : Window
+    public partial class Vendedores : Window
     {
         SqlConnection sqlconnection;
-        public Proveedores()
+        public Vendedores()
         {
             InitializeComponent();
             string connectionString = @"server=Data Source=LAPTOP-61P3GV5K\SQLEXPRESS;Initial Catalog=WILEN;Integrated Security=True";
