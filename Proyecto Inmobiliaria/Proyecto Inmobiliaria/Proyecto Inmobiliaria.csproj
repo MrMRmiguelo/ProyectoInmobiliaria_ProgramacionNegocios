@@ -42,6 +42,7 @@
       <HintPath>..\packages\MaterialDesignThemes.2.6.0\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -66,6 +67,11 @@
     </Compile>
     <Compile Include="Formularios\Vendedores.xaml.cs">
       <DependentUpon>Vendedores.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WILENDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WILENDataSet.xsd</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -117,6 +123,17 @@
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="WILENDataSet.xsc">
+      <DependentUpon>WILENDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="WILENDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>WILENDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WILENDataSet.xss">
+      <DependentUpon>WILENDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
