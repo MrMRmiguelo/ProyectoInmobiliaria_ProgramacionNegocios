@@ -12,7 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Proyecto_Inmobiliaria.Formularios
+namespace Proyecto_Inmobiliaria
 {
     /// <summary>
     /// Lógica de interacción para Clientes.xaml

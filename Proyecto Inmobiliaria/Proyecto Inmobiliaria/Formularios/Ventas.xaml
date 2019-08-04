@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:Proyecto_Inmobiliaria"
-            xmlns:wpf="http://schemas.microsoft.com/netfx/2009/xaml/presentation"
+        xmlns:wpf="http://schemas.microsoft.com/netfx/2009/xaml/presentation"
         mc:Ignorable="d"
         Title="Ventas" Height="670" Width="1075" WindowStartupLocation="Manual" Top="130" Left="295" ResizeMode="NoResize" WindowStyle="None" BorderBrush="Gainsboro" BorderThickness="2">
     <Grid>
@@ -103,10 +103,10 @@
         <Border Name="PanelMantenimientoPart1" Visibility="Visible"  Grid.Column="0" Grid.Row="2">
             <StackPanel Orientation="Vertical" Margin="15" HorizontalAlignment="Center" VerticalAlignment="Top" >
 
-                <ComboBox Name="cbComprobante" Width="200" FontSize="25" Foreground="Blue" Style="{StaticResource MaterialDesignFloatingHintComboBox}" materialDesign:HintAssist.Hint="Comprobante" materialDesign:HintAssist.IsFloating="True" Margin=" 0 0 120 25" >
-
+                <ComboBox Name="cbComprobante" Width="200" FontSize="25" Foreground="Blue" Style="{StaticResource MaterialDesingFloatingHintComboBox}" materialDesign:HintAssist.Hint="Comprobante" materialDesign:HintAssist.IsFloating="True" Margin=" 0 0 120 25">
+                    
                 </ComboBox>
-                <StackPanel Orientation="Horizontal" Width="280" Margin="0 10 45 0">
+                    <StackPanel Orientation="Horizontal" Width="280" Margin="0 10 45 0">
                     <ComboBox Name="cbArticulo" Width="200" Background="White" Style="{StaticResource MaterialDesignFloatingHintComboBox }" materialDesign:HintAssist.Hint="Articulo" materialDesign:HintAssist.IsFloating="True" FontSize="25" Foreground="Blue" Margin="0 0 15 15"/>
                     <!--<Button Name="btnBuscarArticulo" Margin="5 0 0 0">
                         <materialDesign:PackIcon Kind="Search" Width="25" Height="25"/>

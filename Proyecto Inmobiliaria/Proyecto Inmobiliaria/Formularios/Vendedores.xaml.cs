@@ -18,7 +18,7 @@ using System.Configuration;
 namespace Proyecto_Inmobiliaria.Formularios
 {
     /// <summary>
-    /// Lógica de interacción para Proveedores.xaml
+    /// Lógica de interacción para Empleado.xaml
     /// </summary>
     public partial class Vendedores : Window
     {
@@ -37,7 +37,7 @@ namespace Proyecto_Inmobiliaria.Formularios
             try
             {
 
-                string query = "SELECT * FROM Proveedor";
+                string query = "SELECT * FROM Empleado";
 
                 SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(query, sqlconnection);
 
@@ -49,7 +49,7 @@ namespace Proyecto_Inmobiliaria.Formularios
 
                     sqlDataAdapter.Fill(tabla1);
 
-                    dgllenar.DisplayMemberPath = "Id_Proveedor";
+                    dgllenar.DisplayMemberPath = "idEmpleado";
                     dgllenar.DisplayMemberPath = "Nombre";
                     dgllenar.DisplayMemberPath = "Sector_Comercial";
                     dgllenar.DisplayMemberPath = "Tipo_Documento";
@@ -60,7 +60,7 @@ namespace Proyecto_Inmobiliaria.Formularios
                     dgllenar.DisplayMemberPath = "Fecha";
 
 
-                    dgllenar.SelectedValuePath = "Id_Proveedor";
+                    dgllenar.SelectedValuePath = "idEmpleado";
                     dgllenar.ItemsSource = tabla1.DefaultView;
                 }
             }
@@ -182,7 +182,7 @@ namespace Proyecto_Inmobiliaria.Formularios
         {
             try
             {
-                string query = "SELECT * FROM Proveedor WHERE Nombre = @nombre ";
+                string query = "SELECT * FROM Empleado WHERE Nombre = @nombre ";
 
 
 
@@ -202,7 +202,7 @@ namespace Proyecto_Inmobiliaria.Formularios
 
                     sqlDataAdapter.Fill(tabla);
 
-                    dgllenar.DisplayMemberPath = "Id_Proveedor";
+                    dgllenar.DisplayMemberPath = "idEmpleado";
                     dgllenar.DisplayMemberPath = "Nombre";
                     dgllenar.DisplayMemberPath = "Sector_Comercial";
                     dgllenar.DisplayMemberPath = "Tipo_Documento";
@@ -213,7 +213,7 @@ namespace Proyecto_Inmobiliaria.Formularios
                     dgllenar.DisplayMemberPath = "Fecha";
 
 
-                    dgllenar.SelectedValuePath = "Id_Proveedor";
+                    dgllenar.SelectedValuePath = "idEmpleado";
                     dgllenar.ItemsSource = tabla.DefaultView;
                 }
 
@@ -235,7 +235,7 @@ namespace Proyecto_Inmobiliaria.Formularios
             {
                 try
                 {
-                    string query = "DELETE Proveedor WHERE Nombre =  @nombre";
+                    string query = "DELETE Empleado WHERE Nombre =  @nombre";
 
                     SqlCommand sqlCommand = new SqlCommand(query, sqlconnection);
 
@@ -291,7 +291,7 @@ namespace Proyecto_Inmobiliaria.Formularios
             {
                 try
                 {
-                    string query = "INSERT INTO Proveedor(Nombre,Sector_Comercial,Tipo_Documento,Documento,Direccion,Telefono,Correo) VALUES(@Nombre,@Sector,@TipoDoc,@Doc,@Direccion,@Telefono,@Correo)";
+                    string query = "INSERT INTO Empleado(Nombre,Sector_Comercial,Tipo_Documento,Documento,Direccion,Telefono,Correo) VALUES(@Nombre,@Sector,@TipoDoc,@Doc,@Direccion,@Telefono,@Correo)";
 
                     SqlCommand sqlCommand = new SqlCommand(query, sqlconnection);
 
@@ -325,14 +325,14 @@ namespace Proyecto_Inmobiliaria.Formularios
         {
             if (txtNombre.Text == string.Empty)
             {
-                MessageBox.Show("Debes ingresar el nombre del proveedor en la caja de texto.");
+                MessageBox.Show("Debes ingresar el nombre del empleado en la caja de texto.");
                 txtNombre.Focus();
             }
             else
             {
                 try
                 {
-                    string query = "UPDATE Proveedor SET Documento = @Doc, Direccion = @Direccion, Telefono = @Telefono, Correo = @Correo WHERE Nombre = @Nombre";
+                    string query = "UPDATE Empleado SET Documento = @Doc, Direccion = @Direccion, Telefono = @Telefono, Correo = @Correo WHERE Nombre = @Nombre";
                     //Articulo(Codigo,Nombre,Descripcion,Id_Categoria,Fecha) VALUES(@codigo,@nombre,@descripcion,@id_Categoria)
                     SqlCommand sqlCommand = new SqlCommand(query, sqlconnection);
 
