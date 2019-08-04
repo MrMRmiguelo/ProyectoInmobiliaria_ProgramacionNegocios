@@ -30,7 +30,7 @@
                 <Button Name="btnMax" Background="Gainsboro" Visibility="Visible" Click="BtnMax_Click" MouseEnter="BtnMax_MouseEnter"  MouseLeave="BtnMax_MouseLeave" BorderThickness="0">
                     <materialDesign:PackIcon Kind="WindowMaximize"/>
                 </Button>
-                <Button Name="btnRest" Background="#FF1B64CF" Visibility="Collapsed" MouseEnter="BtnRest_MouseEnter" MouseLeave="BtnRest_MouseLeave" Click="BtnRest_Click" BorderThickness="0">
+                <Button Name="btnRest" Background="Gainsboro" Visibility="Collapsed" MouseEnter="BtnRest_MouseEnter" MouseLeave="BtnRest_MouseLeave" Click="BtnRest_Click" BorderThickness="0">
                     <materialDesign:PackIcon Kind="WindowRestore"/>
                 </Button>
                 <Button Name="btnCerrar" Background="Gainsboro" MouseEnter="BtnCerrar_MouseEnter" MouseLeave="BtnCerrar_MouseLeave" Click="BtnCerrar_Click" BorderThickness="0">
@@ -70,7 +70,7 @@
                         </StackPanel>
                         <Button Name="btnLBuscarVentas" Background="Gainsboro" Margin="15 20 0 0" Width="170" Height="60" Click="BtnLBuscarVentas_Click">
                             <StackPanel Orientation="Horizontal" >
-                                <materialDesign:PackIcon Kind="Search" Width="40" Height="40" Margin="5"/>
+                                <materialDesign:PackIcon Kind="SearchWeb" Width="40" Height="40" Margin="5"/>
                                 <TextBlock FontSize="25" Margin="5">Buscar</TextBlock>
                             </StackPanel>
                         </Button>
