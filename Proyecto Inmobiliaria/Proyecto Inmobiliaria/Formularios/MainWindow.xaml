@@ -18,7 +18,7 @@
                 </LinearGradientBrush>
             </Rectangle.Fill>
         </Rectangle>
-        <Image Source="C:\Users\Windows 10\Source\Repos\ProyectoInmobiliaria_ProgramacionNegocios\Proyecto Inmobiliaria\Proyecto Inmobiliaria\Fotos\40322405_316798888867786_2113668661808988160_n.jpg" Width="100" Height="100" VerticalAlignment="Top" Margin="20"/>
+        <Image Source="C:\Users\lwill\Source\Repos\ProyectoInmobiliaria_ProgramacionNegocios\Proyecto Inmobiliaria\Proyecto Inmobiliaria\Fotos\40322405_316798888867786_2113668661808988160_n.jpg" Width="100" Height="100" VerticalAlignment="Top" Margin="20"/>
         <Rectangle Width="300" Height="240" Fill="White" VerticalAlignment="Bottom" Margin="0,100" RadiusY="11.93" RadiusX="11.93">
             <Rectangle.Effect>
                 <DropShadowEffect Color="Gray" Direction="0" BlurRadius="10" ShadowDepth="1" RenderingBias="Quality"/>
@@ -31,6 +31,6 @@
                 <PasswordBox materialDesign:HintAssist.Hint="Contrasena" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="0.10" FontFamily="Champagne &amp; Limousines" FontSize="18"/>
             </StackPanel>
         </Grid>
-        <Button VerticalAlignment="Bottom" Margin="0,85" Width="150" Content="LOGIN"/>
+        <Button VerticalAlignment="Bottom" Margin="0,85" Width="150" Content="Login"/>
     </Grid>
 </Window>
