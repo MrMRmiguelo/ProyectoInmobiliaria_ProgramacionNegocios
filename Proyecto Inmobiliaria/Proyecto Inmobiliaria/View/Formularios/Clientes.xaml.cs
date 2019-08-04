@@ -12,16 +12,16 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Proyecto_Inmobiliaria
+namespace Proyecto_Inmobiliaria.Formularios
 {
     /// <summary>
     /// Lógica de interacción para Clientes.xaml
     /// </summary>
-    public partial class Clientes : Window
+   /* public partial class Clientes : Window
     {
         public Clientes()
         {
             InitializeComponent();
         }
-    }
+    }*/
 }

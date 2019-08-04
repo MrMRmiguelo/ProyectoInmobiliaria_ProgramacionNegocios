@@ -17,7 +17,7 @@ using System.Windows.Shapes;
 using Proyecto_Inmobiliaria.Formularios;
 
 
-namespace Proyecto_Inmobiliaria
+namespace Proyecto_Inmobiliaria.Formularios
 {
     /// <summary>
     /// Lógica de interacción para MainWindow.xaml
