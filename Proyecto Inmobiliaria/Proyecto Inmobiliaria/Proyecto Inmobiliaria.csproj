@@ -62,18 +62,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Formularios\Clientes.xaml.cs">
-      <DependentUpon>Clientes.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Login.xaml.cs">
-      <DependentUpon>Login.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Ventas.xaml.cs">
-      <DependentUpon>Ventas.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Formularios\Vendedores.xaml.cs">
-      <DependentUpon>Vendedores.xaml</DependentUpon>
-    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -87,14 +75,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="Menu.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Formularios\Ventas.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Formularios\Vendedores.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
